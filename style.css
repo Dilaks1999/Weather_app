@@ -1,0 +1,208 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Weather App Container */
+.weather-container {
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px;
+    font-family: 'Helvetica', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Container Hover Effect */
+.weather-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Weather Title */
+.weather-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* City Input Styles */
+.city-input {
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #f7f7f7;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.city-input:focus {
+    border-color: #4CAF50;
+    background-color: #e8f5e9;
+}
+
+/* Weather Info Section */
+.weather-info {
+    margin-bottom: 30px;
+}
+
+.weather-info h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+.weather-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FF9800;
+    margin: 20px 0;
+}
+
+/* Weather Icon */
+.weather-info img {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.weather-info img:hover {
+    transform: scale(1.1);
+}
+
+/* Forecast Section Container */
+.forecast-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forecast-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Forecast Title */
+.forecast-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Table Styling for Forecast */
+.forecast-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.forecast-table th, .forecast-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.forecast-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.forecast-table td {
+    background-color: #fff;
+    color: #555;
+}
+
+.forecast-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.forecast-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+/* Footer Section */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Error Message Styling */
+.weather-container .error {
+    background-color: transparent;
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .weather-container {
+        padding: 30px 20px;
+        width: 90%;
+    }
+
+    .city-input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .temperature {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <h2 class="weather-title">Weather App</h2>
+        <input type="text" id="city" class="city-input" placeholder="Enter city name" />
+        <button id="getWeatherBtn">Get Weather</button>
+
+        <div class="weather-info">
+            <h3 id="cityName"></h3>
+            <p id="weatherDescription"></p>
+            <div id="temperature"></div>
+            <img id="weatherIcon" src="" alt="weather icon" />
+        </div>
+
+        <div class="forecast-container">
+            <h3 class="forecast-title">3-Day Forecast</h3>
+            <table class="forecast-table">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Temperature</th>
+                        <th>Condition</th>
+                    </tr>
+                </thead>
+                <tbody id="forecastData">
+                    <!-- Forecast Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="error" id="errorMessage"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Weather App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
